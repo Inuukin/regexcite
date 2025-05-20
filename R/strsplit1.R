@@ -1,13 +1,11 @@
-#' A safer version of strsplit
+#' Title of the function
 #'
-#' This function splits a string and returns a character vector directly.
-#' Unlike base::strsplit, it returns the first element by default.
+#' Description of what it does.
 #'
-#' @param x A character string to split.
-#' @param split A character string to use as the delimiter.
-#' @return A character vector of split elements.
+#' @param x Character input to split.
+#' @param split Delimiter to split by.
+#' @return A character vector.
 #' @export
-
 strsplit1 <- function(x, split) {
-  strsplit(x, split = split)[[1]]
+  strsplit(x, split, fixed = TRUE)[[1]]
 }
