@@ -2,18 +2,22 @@
 % Please edit documentation in R/strsplit1.R
 \name{strsplit1}
 \alias{strsplit1}
-\title{Title of the function}
+\title{Split a string}
 \usage{
 strsplit1(x, split)
 }
 \arguments{
-\item{x}{Character input to split.}
+\item{x}{A character vector with one element.}
 
-\item{split}{Delimiter to split by.}
+\item{split}{What to split on.}
 }
 \value{
 A character vector.
 }
 \description{
-Description of what it does.
+Split a string
+}
+\examples{
+x <- "alfa,bravo,charlie,delta"
+strsplit1(x, split = ",")
 }
