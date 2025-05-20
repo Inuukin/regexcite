@@ -1,11 +1,14 @@
-#' Title of the function
+#' Split a string
 #'
-#' Description of what it does.
+#' @param x A character vector with one element.
+#' @param split What to split on.
 #'
-#' @param x Character input to split.
-#' @param split Delimiter to split by.
 #' @return A character vector.
 #' @export
+#'
+#' @examples
+#' x <- "alfa,bravo,charlie,delta"
+#' strsplit1(x, split = ",")
 strsplit1 <- function(x, split) {
-  strsplit(x, split, fixed = TRUE)[[1]]
+  strsplit(x, split = split)[[1]]
 }
